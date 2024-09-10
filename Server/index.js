@@ -18,7 +18,7 @@ const __dirname = path.dirname(fileName);
 
 // CORS configuration
 const corsOptions = {
-  origin: "http://localhost:5173", // Frontend origin
+  origin: process.env.FRONTEND_URL, // Frontend origin
   credentials: true, // Allow credentials like cookies
   methods: ["GET", "POST", "PATCH", "DELETE"], // Allowed HTTP methods
   allowedHeaders: ["Content-Type", "Authorization"], // Custom headers
